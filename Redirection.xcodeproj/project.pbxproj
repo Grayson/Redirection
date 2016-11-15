@@ -14,6 +14,7 @@
 		1DFD918F1DDA854B004266F8 /* RedirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD918E1DDA854B004266F8 /* RedirectionTests.swift */; };
 		1DFD919A1DDA9B54004266F8 /* ServerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD91991DDA9B54004266F8 /* ServerCommunicator.swift */; };
 		1DFD919C1DDA9EDB004266F8 /* BrowserUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD919B1DDA9EDB004266F8 /* BrowserUtility.swift */; };
+		1DFD919E1DDAA0BE004266F8 /* BrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD919D1DDAA0BE004266F8 /* BrowserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		1DFD91901DDA854B004266F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DFD91991DDA9B54004266F8 /* ServerCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCommunicator.swift; sourceTree = "<group>"; };
 		1DFD919B1DDA9EDB004266F8 /* BrowserUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserUtility.swift; sourceTree = "<group>"; };
+		1DFD919D1DDAA0BE004266F8 /* BrowserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				1DFD91851DDA854B004266F8 /* Info.plist */,
 				1DFD91991DDA9B54004266F8 /* ServerCommunicator.swift */,
 				1DFD919B1DDA9EDB004266F8 /* BrowserUtility.swift */,
+				1DFD919D1DDAA0BE004266F8 /* BrowserViewModel.swift */,
 			);
 			path = Redirection;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DFD917F1DDA854B004266F8 /* ViewController.swift in Sources */,
+				1DFD919E1DDAA0BE004266F8 /* BrowserViewModel.swift in Sources */,
 				1DFD919A1DDA9B54004266F8 /* ServerCommunicator.swift in Sources */,
 				1DFD917D1DDA854B004266F8 /* AppDelegate.swift in Sources */,
 				1DFD919C1DDA9EDB004266F8 /* BrowserUtility.swift in Sources */,
