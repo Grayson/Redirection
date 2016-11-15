@@ -14,6 +14,13 @@ struct BrowserInfo {
 	let identifier: String
 }
 
+extension BrowserInfo : Equatable {}
+func ==(lhs: BrowserInfo, rhs: BrowserInfo) -> Bool {
+	return lhs.name == rhs.name
+		&& lhs.location == rhs.location
+		&& lhs.identifier == rhs.identifier
+}
+
 private func fetchName(from dictionary: [String: Any?]?) -> String? {
 	guard let dictionary = dictionary else { return nil }
 	let value: Any? = dictionary["CFBundleDisplayName"]
