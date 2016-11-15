@@ -15,6 +15,7 @@
 		1DFD919A1DDA9B54004266F8 /* ServerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD91991DDA9B54004266F8 /* ServerCommunicator.swift */; };
 		1DFD919C1DDA9EDB004266F8 /* BrowserUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD919B1DDA9EDB004266F8 /* BrowserUtility.swift */; };
 		1DFD919E1DDAA0BE004266F8 /* BrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD919D1DDAA0BE004266F8 /* BrowserViewModel.swift */; };
+		1DFD91A01DDAA1CC004266F8 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD919F1DDAA1CC004266F8 /* Match.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		1DFD91991DDA9B54004266F8 /* ServerCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCommunicator.swift; sourceTree = "<group>"; };
 		1DFD919B1DDA9EDB004266F8 /* BrowserUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserUtility.swift; sourceTree = "<group>"; };
 		1DFD919D1DDAA0BE004266F8 /* BrowserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewModel.swift; sourceTree = "<group>"; };
+		1DFD919F1DDAA1CC004266F8 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				1DFD91991DDA9B54004266F8 /* ServerCommunicator.swift */,
 				1DFD919B1DDA9EDB004266F8 /* BrowserUtility.swift */,
 				1DFD919D1DDAA0BE004266F8 /* BrowserViewModel.swift */,
+				1DFD919F1DDAA1CC004266F8 /* Match.swift */,
 			);
 			path = Redirection;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				1DFD919A1DDA9B54004266F8 /* ServerCommunicator.swift in Sources */,
 				1DFD917D1DDA854B004266F8 /* AppDelegate.swift in Sources */,
 				1DFD919C1DDA9EDB004266F8 /* BrowserUtility.swift in Sources */,
+				1DFD91A01DDAA1CC004266F8 /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
