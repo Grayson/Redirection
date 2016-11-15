@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum MatchType {
+enum MatchType: Int {
 	case contains
 	case startsWith
 	case endsWith
