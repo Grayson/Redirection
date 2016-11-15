@@ -10,7 +10,6 @@ import AppKit
 
 class RuleTableCellView : NSTableCellView {
 	@IBOutlet var matchPopupButton: NSPopUpButton?
-	@IBOutlet var valueTextField: NSTextField?
 	@IBOutlet var browserPopupButton: NSPopUpButton?
 
 	override var objectValue: Any? { didSet { updateValues(viewModel: objectValue as? RuleViewModel) } }
@@ -19,12 +18,13 @@ class RuleTableCellView : NSTableCellView {
 		guard
 			let viewModel = viewModel,
 			let matchPopupButton = matchPopupButton,
-			let valueTextField = valueTextField,
+			let textField = textField,
 			let browserPopupButton = browserPopupButton
 		else { fatalError() }
 
 		matchPopupButton.selectItem(at: viewModel.matchIndex)
-		valueTextField.stringValue = viewModel.value
+		textField.stringValue = viewModel.value
+		textField.isEditable = true
 		browserPopupButton.items = viewModel.browsers.map {
 			let menuItem = NSMenuItem(title: $0.title, action: nil, keyEquivalent: "")
 			menuItem.image = $0.image

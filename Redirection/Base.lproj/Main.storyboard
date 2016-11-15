@@ -725,7 +725,7 @@
                                     <rect key="frame" x="1" y="1" width="478" height="184"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="42" rowSizeStyle="automatic" viewBased="YES" id="NT9-LK-L2y">
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="42" rowSizeStyle="automatic" viewBased="YES" id="NT9-LK-L2y">
                                             <rect key="frame" x="0.0" y="0.0" width="479" height="184"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
@@ -823,7 +823,7 @@
                                                             <connections>
                                                                 <outlet property="browserPopupButton" destination="mq9-JU-eoM" id="7Vh-gM-8wt"/>
                                                                 <outlet property="matchPopupButton" destination="nOI-Ym-iYh" id="1p2-bJ-ZZa"/>
-                                                                <outlet property="valueTextField" destination="PLZ-0e-tTc" id="gnJ-8W-JHZ"/>
+                                                                <outlet property="textField" destination="PLZ-0e-tTc" id="eM4-KY-weg"/>
                                                             </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
