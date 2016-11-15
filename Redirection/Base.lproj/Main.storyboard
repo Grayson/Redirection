@@ -722,11 +722,11 @@
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="44" horizontalPageScroll="10" verticalLineScroll="44" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrH-W0-1ER">
                                 <rect key="frame" x="0.0" y="61" width="480" height="186"/>
                                 <clipView key="contentView" id="eF4-wn-015">
-                                    <rect key="frame" x="1" y="0.0" width="478" height="185"/>
+                                    <rect key="frame" x="1" y="1" width="478" height="184"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="42" rowSizeStyle="automatic" headerView="ZiE-1m-e3p" viewBased="YES" id="NT9-LK-L2y">
-                                            <rect key="frame" x="0.0" y="0.0" width="479" height="162"/>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="42" rowSizeStyle="automatic" viewBased="YES" id="NT9-LK-L2y">
+                                            <rect key="frame" x="0.0" y="0.0" width="479" height="184"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -745,7 +745,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="xPe-eY-s6H">
+                                                        <tableCellView identifier="Default" id="xPe-eY-s6H" customClass="RuleTableCellView" customModule="Redirection" customModuleProvider="target">
                                                             <rect key="frame" x="1" y="1" width="476" height="42"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -820,6 +820,11 @@
                                                                 <constraint firstItem="mq9-JU-eoM" firstAttribute="centerY" secondItem="xPe-eY-s6H" secondAttribute="centerY" id="qnq-UT-xgz"/>
                                                                 <constraint firstItem="VfU-Hx-0uJ" firstAttribute="leading" secondItem="ctH-sS-MQ8" secondAttribute="trailing" constant="8" id="tlc-i5-b9k"/>
                                                             </constraints>
+                                                            <connections>
+                                                                <outlet property="browserPopupButton" destination="mq9-JU-eoM" id="7Vh-gM-8wt"/>
+                                                                <outlet property="matchPopupButton" destination="nOI-Ym-iYh" id="1p2-bJ-ZZa"/>
+                                                                <outlet property="valueTextField" destination="PLZ-0e-tTc" id="gnJ-8W-JHZ"/>
+                                                            </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
@@ -831,14 +836,10 @@
                                     <rect key="frame" x="1" y="169" width="478" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="urd-j1-hCr">
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="urd-j1-hCr">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <tableHeaderView key="headerView" id="ZiE-1m-e3p">
-                                    <rect key="frame" x="0.0" y="0.0" width="479" height="23"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableHeaderView>
                             </scrollView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iVM-V9-Ui2">
                                 <rect key="frame" x="180" y="13" width="120" height="32"/>
@@ -847,7 +848,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="addNewRule:" target="XfG-lQ-9wD" id="b6c-l3-CN5"/>
+                                    <action selector="addNewRule:" target="XfG-lQ-9wD" id="EiQ-W1-4WF"/>
                                 </connections>
                             </button>
                         </subviews>

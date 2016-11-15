@@ -44,16 +44,18 @@ private func localizedStatusButtonLabel(for status: ServerStatus) -> String {
 
 class ViewController: NSViewController {
 
-	@IBOutlet var tableView: NSTableView? { didSet { reloadView() } }
+	@IBOutlet var tableView: NSTableView? { didSet { setupRulesTableView(); } }
 	@IBOutlet var statusImageView: NSImageView? { didSet { reloadView() } }
 	@IBOutlet var statusLabel: NSTextField? { didSet { reloadView() } }
 	@IBOutlet var statusButton: NSButton? { didSet { reloadView() } }
 
 	var serverStatus: ServerStatus = .active
+	var rules: [Rule] = [] { didSet { rulesTableController.update(rules: rules) } }
+	let rulesTableController = RulesTableController()
 
 	func reloadView() {
 		guard
-			let tableView = tableView,
+			let _ = tableView,
 			let statusImageView = statusImageView,
 			let statusLabel = statusLabel,
 			let statusButton = statusButton
@@ -62,11 +64,18 @@ class ViewController: NSViewController {
 		statusImageView.image = image(for: serverStatus)
 		statusLabel.stringValue = localizedStatusLabel(for: serverStatus)
 		statusButton.title = localizedStatusButtonLabel(for: serverStatus)
+	}
 
-		tableView.reloadData()
+	private func setupRulesTableView() {
+		guard let tableView = tableView else { return }
+		rulesTableController.tableView = tableView
 	}
 
 	@IBAction func addNewRule(_ sender: AnyObject) {
+		guard let info = fetchBrowserInfo().first else { fatalError() }
+		let match = Match(type: .contains, test: "")
+		let rule = Rule(browserInfo: info, match: match)
+		rules.append(rule)
 	}
 }
 
