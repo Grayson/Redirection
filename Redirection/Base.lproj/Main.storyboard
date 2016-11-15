@@ -821,6 +821,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="addNewRule:" target="XfG-lQ-9wD" id="b6c-l3-CN5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -835,6 +838,12 @@
                             <constraint firstAttribute="trailing" secondItem="OrH-W0-1ER" secondAttribute="trailing" id="xBg-nT-24k"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="statusButton" destination="FYK-21-OtZ" id="yLb-i8-vJY"/>
+                        <outlet property="statusImageView" destination="DkH-XA-nxr" id="2jx-KA-1i7"/>
+                        <outlet property="statusLabel" destination="41f-AL-Ksx" id="9fT-eM-GUC"/>
+                        <outlet property="tableView" destination="NT9-LK-L2y" id="5gu-rQ-K5b"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
