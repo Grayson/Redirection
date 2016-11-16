@@ -25,10 +25,6 @@ class RuleTableCellView : NSTableCellView {
 		matchPopupButton.selectItem(at: viewModel.matchIndex)
 		textField.stringValue = viewModel.value
 		textField.isEditable = true
-		browserPopupButton.items = viewModel.browsers.map {
-			let menuItem = NSMenuItem(title: $0.title, action: nil, keyEquivalent: "")
-			menuItem.image = $0.image
-			return menuItem
-		}
+		browserPopupButton.items = viewModel.browserMenuItems
 	}
 }

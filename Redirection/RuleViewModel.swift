@@ -6,7 +6,7 @@
 //  Copyright © 2016 From Concentrate Software. All rights reserved.
 //
 
-import Foundation
+import AppKit
 
 private func convert(match: Match) -> Int {
 	return match.type.rawValue
@@ -21,6 +21,16 @@ class RuleViewModel {
 	var matchIndex: Int
 	var browsers: [BrowserViewModel]
 	var value: String
+
+	var browserMenuItems: [NSMenuItem] {
+		get {
+			return browsers.map {
+				let menuItem = NSMenuItem(title: $0.title, action: nil, keyEquivalent: "")
+				menuItem.image = $0.image
+				return menuItem
+			}
+		}
+	}
 
 	init(rule: Rule) {
 		matchIndex = convert(match: rule.match)
