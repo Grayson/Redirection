@@ -47,8 +47,7 @@ class RuleTableCellView : NSTableCellView {
 			let browserPopupButton = browserPopupButton
 		else { return }
 
-		rvm.browsers.forEach { $0.isSelected = false }
-		rvm.browsers[browserPopupButton.indexOfSelectedItem].isSelected = true
+		rvm.selectedBrowserIndex = browserPopupButton.selectedItem?.tag ?? -1
 	}
 
 	func matchPopupDidChange(_ sender: AnyObject) {
