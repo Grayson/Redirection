@@ -53,7 +53,7 @@ class RuleTableCellView : NSTableCellView {
 	func matchPopupDidChange(_ sender: AnyObject) {
 		guard
 			let rvm = objectValue as? RuleViewModel,
-			let matchPopupButton = browserPopupButton
+			let matchPopupButton = matchPopupButton
 		else { return }
 		rvm.matchIndex = matchPopupButton.indexOfSelectedItem
 	}
