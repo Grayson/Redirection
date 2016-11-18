@@ -20,11 +20,15 @@ class RulesTableController : NSObject, NSTableViewDelegate, NSTableViewDataSourc
 		}
 	}
 
-	private var rules: [RuleViewModel] = []
+	var onRuleChanged: (Change<Rule>) -> () = { _ in }
+	private var rules: [RuleViewModel] = [] { didSet { tableView?.reloadData() } }
 
 	func update(rules: [Rule]) {
-		self.rules = rules.map { RuleViewModel(rule: $0) }
-		tableView?.reloadData()
+		self.rules = rules.map {
+			let vm = RuleViewModel(rule: $0)
+			vm.didChange = { [weak self] in self?.onRuleChanged($0) }
+			return vm
+		}
 	}
 
 	func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {

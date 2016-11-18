@@ -52,6 +52,10 @@ class ViewController: NSViewController {
 	var serverStatus: ServerStatus = .active
 	var rules: [Rule] = [] { didSet { rulesTableController.update(rules: rules) } }
 	let rulesTableController = RulesTableController()
+	override func viewDidLoad() {
+		rulesTableController.onRuleChanged = { [weak self] in
+		}
+	}
 
 	func reloadView() {
 		guard

@@ -22,18 +22,21 @@ class RuleViewModel {
 		let model: BrowserViewModel
 	}
 
-	var matchIndex: Int
-	var value: String
+	var matchIndex: Int { didSet { notifyRuleChanged() } }
+	var value: String { didSet { notifyRuleChanged() } }
+	var didChange: (Change<Rule>) -> () = { _ in }
 
 	var selectedBrowserIndex: Int {
 		get { return (browsers.first { $0.model.isSelected })?.index ?? -1 }
 		set(value) {
 			browsers.forEach { $0.model.isSelected = false }
 			(browsers.first { $0.index == value })?.model.isSelected = true
+			notifyRuleChanged()
 		}
 	}
 
 	private var browsers: [IndexedBrowserViewModel]
+	private var originalRule: Rule
 
 	var browserMenuItems: [NSMenuItem] {
 		get {
@@ -54,6 +57,7 @@ class RuleViewModel {
 			vm.isSelected = info == rule.browserInfo
 			return IndexedBrowserViewModel(index: index, model: vm)
 		}
+		originalRule = rule
 	}
 
 	func generateRule() -> Rule? {
@@ -63,4 +67,11 @@ class RuleViewModel {
 		let match = Match(type: convert(int: matchIndex), test: value)
 		return Rule(browserInfo: info, match: match)
 	}
+
+	private func notifyRuleChanged() {
+		let newRule = generateRule()!
+		didChange(Change(old: originalRule, new: newRule))
+		originalRule = newRule
+	}
+
 }
