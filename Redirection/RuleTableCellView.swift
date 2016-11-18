@@ -69,7 +69,7 @@ class RuleTableCellView : NSTableCellView {
 			let matchPopupButton = matchPopupButton,
 			let textField = textField,
 			let browserPopupButton = browserPopupButton
-		else { fatalError() }
+		else { return }
 
 		matchPopupButton.selectItem(at: viewModel.matchIndex)
 		textField.stringValue = viewModel.value
