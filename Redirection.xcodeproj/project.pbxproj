@@ -21,6 +21,7 @@
 		1DFD91A61DDAB461004266F8 /* RulesTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD91A51DDAB461004266F8 /* RulesTableController.swift */; };
 		1DFD91AA1DDABBDA004266F8 /* RuleTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD91A91DDABBDA004266F8 /* RuleTableCellView.swift */; };
 		1DFD91AE1DDAC325004266F8 /* NSPopUpButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD91AD1DDAC325004266F8 /* NSPopUpButtonExtensions.swift */; };
+		1DFD91B41DDDFAAC004266F8 /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD91B31DDDFAAC004266F8 /* Change.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		1DFD91A51DDAB461004266F8 /* RulesTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesTableController.swift; sourceTree = "<group>"; };
 		1DFD91A91DDABBDA004266F8 /* RuleTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleTableCellView.swift; sourceTree = "<group>"; };
 		1DFD91AD1DDAC325004266F8 /* NSPopUpButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPopUpButtonExtensions.swift; sourceTree = "<group>"; };
+		1DFD91B31DDDFAAC004266F8 /* Change.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				1DFD91A51DDAB461004266F8 /* RulesTableController.swift */,
 				1DFD91A91DDABBDA004266F8 /* RuleTableCellView.swift */,
 				1DFD91AD1DDAC325004266F8 /* NSPopUpButtonExtensions.swift */,
+				1DFD91B31DDDFAAC004266F8 /* Change.swift */,
 			);
 			path = Redirection;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				1DFD919E1DDAA0BE004266F8 /* BrowserViewModel.swift in Sources */,
 				1DFD91A41DDAAFD7004266F8 /* RuleViewModel.swift in Sources */,
 				1DFD91AE1DDAC325004266F8 /* NSPopUpButtonExtensions.swift in Sources */,
+				1DFD91B41DDDFAAC004266F8 /* Change.swift in Sources */,
 				1DFD91AA1DDABBDA004266F8 /* RuleTableCellView.swift in Sources */,
 				1DFD919A1DDA9B54004266F8 /* ServerCommunicator.swift in Sources */,
 				1DFD91A61DDAB461004266F8 /* RulesTableController.swift in Sources */,
