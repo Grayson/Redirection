@@ -70,5 +70,6 @@ class RuleTableCellView : NSTableCellView {
 		textField.stringValue = viewModel.value
 		textField.isEditable = true
 		browserPopupButton.items = viewModel.browserMenuItems
+		browserPopupButton.selectItem(withTag: viewModel.selectedBrowserIndex)
 	}
 }
