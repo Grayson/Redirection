@@ -55,6 +55,8 @@ class ViewController: NSViewController {
 	override func viewDidLoad() {
 		rulesTableController.onRuleChanged = { [weak self] in
 		}
+		rulesTableController.onRuleDeleted = { [weak self] in
+		}
 	}
 
 	func reloadView() {

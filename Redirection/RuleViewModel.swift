@@ -25,6 +25,7 @@ class RuleViewModel {
 	var matchIndex: Int { didSet { notifyRuleChanged() } }
 	var value: String { didSet { notifyRuleChanged() } }
 	var didChange: (Change<Rule>) -> () = { _ in }
+	var onDelete: (Rule) -> () = { _ in }
 
 	var selectedBrowserIndex: Int {
 		get { return (browsers.first { $0.model.isSelected })?.index ?? -1 }
@@ -66,6 +67,10 @@ class RuleViewModel {
 		let info = BrowserInfo(name: selectedBrowser.title, location: URL(fileURLWithPath: selectedBrowser.path), identifier: selectedBrowser.identifier)
 		let match = Match(type: convert(int: matchIndex), test: value)
 		return Rule(browserInfo: info, match: match)
+	}
+
+	func delete() {
+		onDelete(originalRule)
 	}
 
 	private func notifyRuleChanged() {

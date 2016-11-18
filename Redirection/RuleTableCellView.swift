@@ -30,7 +30,12 @@ class RuleTableCellView : NSTableCellView {
 		}
 	}
 
+	@IBAction func delete(_ sender: Any) {
+		viewModel.delete()
+	}
+
 	override var objectValue: Any? { didSet { updateValues(viewModel: objectValue as? RuleViewModel) } }
+	var viewModel: RuleViewModel { get { return objectValue! as! RuleViewModel } }
 
 	func textFieldDidChange(_ sender: AnyObject) {
 		guard

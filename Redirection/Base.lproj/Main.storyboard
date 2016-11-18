@@ -791,6 +791,9 @@
                                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
+                                                                    <connections>
+                                                                        <action selector="delete:" target="xPe-eY-s6H" id="q3d-e6-cbi"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mq9-JU-eoM">
                                                                     <rect key="frame" x="381" y="7" width="76" height="26"/>

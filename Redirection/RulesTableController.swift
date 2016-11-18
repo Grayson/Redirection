@@ -21,12 +21,15 @@ class RulesTableController : NSObject, NSTableViewDelegate, NSTableViewDataSourc
 	}
 
 	var onRuleChanged: (Change<Rule>) -> () = { _ in }
+	var onRuleDeleted: (Rule) -> () = { _ in }
+
 	private var rules: [RuleViewModel] = [] { didSet { tableView?.reloadData() } }
 
 	func update(rules: [Rule]) {
 		self.rules = rules.map {
 			let vm = RuleViewModel(rule: $0)
 			vm.didChange = { [weak self] in self?.onRuleChanged($0) }
+			vm.onDelete = { [weak self] in self?.onRuleDeleted($0) }
 			return vm
 		}
 	}
