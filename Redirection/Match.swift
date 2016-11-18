@@ -41,3 +41,9 @@ struct Match {
 		}
 	}
 }
+
+extension Match: Equatable {}
+func ==(left: Match, right: Match) -> Bool {
+	return left.type == right.type
+		&& left.test == right.test
+}

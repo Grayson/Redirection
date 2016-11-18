@@ -10,3 +10,9 @@ struct Rule {
 	let browserInfo: BrowserInfo
 	let match: Match
 }
+
+extension Rule: Equatable {}
+func ==(left: Rule, right: Rule) -> Bool {
+	return left.browserInfo == right.browserInfo
+		&& left.match == right.match
+}
