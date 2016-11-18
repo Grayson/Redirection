@@ -52,10 +52,17 @@ class ViewController: NSViewController {
 	var serverStatus: ServerStatus = .active
 	var rules: [Rule] = [] { didSet { rulesTableController.update(rules: rules) } }
 	let rulesTableController = RulesTableController()
+	let dataStore: DataStore = { (NSApp.delegate as? AppDelegate)!.dataStore }()
+
 	override func viewDidLoad() {
+		dataStore.fetchAllRules { [weak self] in
+			self?.rules = $0
+		}
 		rulesTableController.onRuleChanged = { [weak self] in
+			self?.dataStore.replace(rule: $0.old, with: $0.new) {}
 		}
 		rulesTableController.onRuleDeleted = { [weak self] in
+			self?.dataStore.delete(rule: $0) { self?.rules = $0 }
 		}
 	}
 
