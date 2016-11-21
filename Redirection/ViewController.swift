@@ -8,7 +8,7 @@
 
 import Cocoa
 
-private func image(for status: ServerStatus) -> NSImage {
+private func image(for status: HelperAppStatus) -> NSImage {
 	switch(status) {
 	case .active:
 		return NSImage(named: "NSStatusAvailable")!
@@ -53,6 +53,7 @@ class ViewController: NSViewController {
 	var rules: [Rule] = [] { didSet { rulesTableController.update(rules: rules) } }
 	let rulesTableController = RulesTableController()
 	let dataStore: DataStore = { (NSApp.delegate as? AppDelegate)!.dataStore }()
+	let communicator: HelperAppCommunicator = { (NSApp.delegate as? AppDelegate)!.helperAppCommunicator }()
 
 	override func viewDidLoad() {
 		dataStore.fetchAllRules { [weak self] in
@@ -67,14 +68,18 @@ class ViewController: NSViewController {
 	}
 
 	func reloadView() {
+		update(status: .inactive)
+		communicator.fetchStatus { [weak self] in self?.update(status: $0) }
+	}
+
+	private func update(status: HelperAppStatus) {
 		guard
-			let _ = tableView,
 			let statusImageView = statusImageView,
 			let statusLabel = statusLabel,
 			let statusButton = statusButton
 		else { return }
 
-		statusImageView.image = image(for: serverStatus)
+		statusImageView.image = image(for: .inactive)
 		statusLabel.stringValue = localizedStatusLabel(for: serverStatus)
 		statusButton.title = localizedStatusButtonLabel(for: serverStatus)
 	}
