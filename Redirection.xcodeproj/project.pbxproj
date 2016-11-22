@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D8B0EBE1DE32E8000B9EAAD /* DistributedNotificationCenterHelperAppCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B0EBD1DE32E8000B9EAAD /* DistributedNotificationCenterHelperAppCommunicator.swift */; };
 		1D8B0EC01DE32F0700B9EAAD /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B0EBF1DE32F0700B9EAAD /* SequenceExtensions.swift */; };
 		1DFD917D1DDA854B004266F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD917C1DDA854B004266F8 /* AppDelegate.swift */; };
 		1DFD917F1DDA854B004266F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD917E1DDA854B004266F8 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D8B0EBD1DE32E8000B9EAAD /* DistributedNotificationCenterHelperAppCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistributedNotificationCenterHelperAppCommunicator.swift; sourceTree = "<group>"; };
 		1D8B0EBF1DE32F0700B9EAAD /* SequenceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
 		1DFD91791DDA854B004266F8 /* Redirection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redirection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFD917C1DDA854B004266F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				1DFD91BA1DDF7BE0004266F8 /* HelperAppCommunicator.swift */,
 				1DFD91BD1DDF7FF5004266F8 /* StubHelperAppCommunicator.swift */,
+				1D8B0EBD1DE32E8000B9EAAD /* DistributedNotificationCenterHelperAppCommunicator.swift */,
 			);
 			name = "Helper communicator";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				1DFD919A1DDA9B54004266F8 /* ServerCommunicator.swift in Sources */,
 				1DFD91B71DDDFF7A004266F8 /* DataStore.swift in Sources */,
 				1DFD91BB1DDF7BE0004266F8 /* HelperAppCommunicator.swift in Sources */,
+				1D8B0EBE1DE32E8000B9EAAD /* DistributedNotificationCenterHelperAppCommunicator.swift in Sources */,
 				1DFD91A61DDAB461004266F8 /* RulesTableController.swift in Sources */,
 				1DFD917D1DDA854B004266F8 /* AppDelegate.swift in Sources */,
 				1DFD91B91DDE0056004266F8 /* PropertyListDataStore.swift in Sources */,

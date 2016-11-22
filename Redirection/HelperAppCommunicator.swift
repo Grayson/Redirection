@@ -6,19 +6,19 @@
 //  Copyright © 2016 From Concentrate Software. All rights reserved.
 //
 
-enum HelperAppStatus {
+enum HelperAppStatus: String {
 	case active
 	case inactive
 	case working
 }
 
-enum HelperAppBasicResponse {
+enum HelperAppBasicResponse: String {
 	case success
 	case failure
 }
 
 protocol HelperAppCommunicator {
-	func fetchStatus(response: (HelperAppStatus) -> ())
-	func change(status: HelperAppStatus, response: (HelperAppStatus) -> ())
-	func load(rules: [Rule], response: (HelperAppBasicResponse) -> ())
+	func fetchStatus(response: @escaping (HelperAppStatus) -> ())
+	func change(status: HelperAppStatus, response: @escaping (HelperAppStatus) -> ())
+	func load(rules: [Rule], response: @escaping (HelperAppBasicResponse) -> ())
 }
