@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D8B0EC01DE32F0700B9EAAD /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B0EBF1DE32F0700B9EAAD /* SequenceExtensions.swift */; };
 		1DFD917D1DDA854B004266F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD917C1DDA854B004266F8 /* AppDelegate.swift */; };
 		1DFD917F1DDA854B004266F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD917E1DDA854B004266F8 /* ViewController.swift */; };
 		1DFD91811DDA854B004266F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFD91801DDA854B004266F8 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D8B0EBF1DE32F0700B9EAAD /* SequenceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
 		1DFD91791DDA854B004266F8 /* Redirection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redirection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFD917C1DDA854B004266F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DFD917E1DDA854B004266F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				1DFD91B61DDDFF7A004266F8 /* DataStore.swift */,
 				1DFD91B81DDE0056004266F8 /* PropertyListDataStore.swift */,
+				1D8B0EBF1DE32F0700B9EAAD /* SequenceExtensions.swift */,
 			);
 			name = DataStorage;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				1DFD91B91DDE0056004266F8 /* PropertyListDataStore.swift in Sources */,
 				1DFD919C1DDA9EDB004266F8 /* BrowserUtility.swift in Sources */,
 				1DFD91A01DDAA1CC004266F8 /* Match.swift in Sources */,
+				1D8B0EC01DE32F0700B9EAAD /* SequenceExtensions.swift in Sources */,
 				1DFD91A21DDAA515004266F8 /* Rule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
