@@ -30,7 +30,7 @@ private enum Action : String {
 }
 
 class DistributedNotificationCenterHelperAppCommunicator: HelperAppCommunicator {
-	fileprivate static let HelperAppBundleIdentifier = "com.fromconcentratesoftware.redirectionhelperapp"
+	fileprivate static let HelperAppBundleIdentifier = "com.fromconcentratesoftware.RedirectionHelper"
 
 	typealias StatusChangeCallback = (HelperAppStatus) -> ()
 	typealias BasicResponseCallback = (HelperAppBasicResponse) -> ()
