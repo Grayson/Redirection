@@ -8,18 +8,18 @@
 
 class StubHelperAppCommunicator : HelperAppCommunicator {
 
-	private var currentStatus: HelperAppStatus = .inactive
+	private var currentStatus: CommonCommunicatorResponses.AppState = .inactive
 
-	func fetchStatus(response: @escaping (HelperAppStatus) -> ()) {
+	func fetchStatus(response: @escaping (CommonCommunicatorResponses.AppState) -> ()) {
 		response(currentStatus)
 	}
 	
-	func change(status: HelperAppStatus, response: @escaping (HelperAppStatus) -> ()) {
+	func change(status: CommonCommunicatorResponses.AppState, response: @escaping (CommonCommunicatorResponses.AppState) -> ()) {
 		currentStatus = status
 		response(currentStatus)
 	}
 
-	func load(rules: [Rule], response: @escaping (HelperAppBasicResponse) -> ()) {
+	func load(rules: [Rule], response: @escaping (CommonCommunicatorResponses.Status) -> ()) {
 		response(.success)
 	}
 }

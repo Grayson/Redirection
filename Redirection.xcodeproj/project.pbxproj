@@ -14,6 +14,9 @@
 		1D8B0ECD1DE9FD6700B9EAAD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B0ECB1DE9FD6700B9EAAD /* MainMenu.xib */; };
 		1D8B0ED31DE9FD8E00B9EAAD /* RedirectionHelper.app in Copy Helper App */ = {isa = PBXBuildFile; fileRef = 1D8B0EC51DE9FD6700B9EAAD /* RedirectionHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1D8B0ED91DEA0A6500B9EAAD /* DistributedNotificationCenterCommunicator+HelperAppCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B0ED81DEA0A6500B9EAAD /* DistributedNotificationCenterCommunicator+HelperAppCommunicator.swift */; };
+		1D8B0EDA1DEA0E8900B9EAAD /* DistributedNotificationCenterCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B0EBD1DE32E8000B9EAAD /* DistributedNotificationCenterCommunicator.swift */; };
+		1D8B0EDC1DEA100300B9EAAD /* CommonCommunicatorStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B0EDB1DEA100300B9EAAD /* CommonCommunicatorStates.swift */; };
+		1D8B0EDD1DEA100300B9EAAD /* CommonCommunicatorStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B0EDB1DEA100300B9EAAD /* CommonCommunicatorStates.swift */; };
 		1DFD917D1DDA854B004266F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD917C1DDA854B004266F8 /* AppDelegate.swift */; };
 		1DFD917F1DDA854B004266F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD917E1DDA854B004266F8 /* ViewController.swift */; };
 		1DFD91811DDA854B004266F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFD91801DDA854B004266F8 /* Assets.xcassets */; };
@@ -68,6 +71,7 @@
 		1D8B0ECC1DE9FD6700B9EAAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1D8B0ECE1DE9FD6700B9EAAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D8B0ED81DEA0A6500B9EAAD /* DistributedNotificationCenterCommunicator+HelperAppCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DistributedNotificationCenterCommunicator+HelperAppCommunicator.swift"; sourceTree = "<group>"; };
+		1D8B0EDB1DEA100300B9EAAD /* CommonCommunicatorStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCommunicatorStates.swift; sourceTree = "<group>"; };
 		1DFD91791DDA854B004266F8 /* Redirection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Redirection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFD917C1DDA854B004266F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DFD917E1DDA854B004266F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 				1DFD91BD1DDF7FF5004266F8 /* StubHelperAppCommunicator.swift */,
 				1D8B0EBD1DE32E8000B9EAAD /* DistributedNotificationCenterCommunicator.swift */,
 				1D8B0ED81DEA0A6500B9EAAD /* DistributedNotificationCenterCommunicator+HelperAppCommunicator.swift */,
+				1D8B0EDB1DEA100300B9EAAD /* CommonCommunicatorStates.swift */,
 			);
 			name = "Helper communicator";
 			sourceTree = "<group>";
@@ -340,7 +345,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D8B0EDA1DEA0E8900B9EAAD /* DistributedNotificationCenterCommunicator.swift in Sources */,
 				1D8B0EC81DE9FD6700B9EAAD /* AppDelegate.swift in Sources */,
+				1D8B0EDD1DEA100300B9EAAD /* CommonCommunicatorStates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +363,7 @@
 				1DFD91BE1DDF7FF5004266F8 /* StubHelperAppCommunicator.swift in Sources */,
 				1DFD91AA1DDABBDA004266F8 /* RuleTableCellView.swift in Sources */,
 				1DFD919A1DDA9B54004266F8 /* ServerCommunicator.swift in Sources */,
+				1D8B0EDC1DEA100300B9EAAD /* CommonCommunicatorStates.swift in Sources */,
 				1DFD91B71DDDFF7A004266F8 /* DataStore.swift in Sources */,
 				1DFD91BB1DDF7BE0004266F8 /* HelperAppCommunicator.swift in Sources */,
 				1D8B0EBE1DE32E8000B9EAAD /* DistributedNotificationCenterCommunicator.swift in Sources */,

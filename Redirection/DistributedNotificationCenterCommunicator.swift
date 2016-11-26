@@ -37,8 +37,8 @@ class DistributedNotificationCenterCommunicator {
 
 	static let HelperAppBundleIdentifier = "com.fromconcentratesoftware.RedirectionHelper"
 
-	typealias StatusChangeCallback = (HelperAppStatus) -> ()
-	typealias BasicResponseCallback = (HelperAppBasicResponse) -> ()
+	typealias StatusChangeCallback = (CommonCommunicatorResponses.AppState) -> ()
+	typealias BasicResponseCallback = (CommonCommunicatorResponses.Status) -> ()
 
 	private var expectedResponses = [ExpectedResponse]()
 
@@ -77,14 +77,14 @@ class DistributedNotificationCenterCommunicator {
 			else { return }
 		switch(expected.onReceive) {
 		case .StatusChange(let callback):
-			guard let status = HelperAppStatus(rawValue: response[NotificationConstants.StatusKey] as? String ?? "")
+			guard let status = CommonCommunicatorResponses.AppState(rawValue: response[NotificationConstants.StatusKey] as? String ?? "")
 				else {
 					print("Unhandled status")
 					break
 			}
 			callback(status)
 		case .BasicResponse(let callback):
-			guard let response = HelperAppBasicResponse(rawValue: response[NotificationConstants.ResponseKey] as? String ?? "")
+			guard let response = CommonCommunicatorResponses.Status(rawValue: response[NotificationConstants.ResponseKey] as? String ?? "")
 				else {
 					print("Unhandled response")
 					break

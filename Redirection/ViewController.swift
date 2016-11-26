@@ -8,7 +8,7 @@
 
 import Cocoa
 
-private func image(for status: HelperAppStatus) -> NSImage {
+private func image(for status: CommonCommunicatorResponses.AppState) -> NSImage {
 	switch(status) {
 	case .active:
 		return NSImage(named: "NSStatusAvailable")!
@@ -72,7 +72,7 @@ class ViewController: NSViewController {
 		communicator.fetchStatus { [weak self] in self?.update(status: $0) }
 	}
 
-	private func update(status: HelperAppStatus) {
+	private func update(status: CommonCommunicatorResponses.AppState) {
 		guard
 			let statusImageView = statusImageView,
 			let statusLabel = statusLabel,

@@ -25,7 +25,7 @@ extension DistributedNotificationCenterCommunicator: HelperAppCommunicator {
 		sendMessage(action: .Heartbeat, uuid: uuid)
 	}
 
-	func change(status: HelperAppStatus, response: @escaping StatusChangeCallback) {
+	func change(status: CommonCommunicatorResponses.AppState, response: @escaping StatusChangeCallback) {
 		guard isHelperRunning() else {
 			response(.inactive)
 			return
