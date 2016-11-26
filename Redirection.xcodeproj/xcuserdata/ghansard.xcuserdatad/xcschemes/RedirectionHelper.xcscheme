@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1DFD91781DDA854B004266F8"
-               BuildableName = "Redirection.app"
-               BlueprintName = "Redirection"
-               ReferencedContainer = "container:Redirection.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D8B0EC41DE9FD6700B9EAAD"
                BuildableName = "RedirectionHelper.app"
                BlueprintName = "RedirectionHelper"
@@ -42,23 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1DFD91891DDA854B004266F8"
-               BuildableName = "RedirectionTests.xctest"
-               BlueprintName = "RedirectionTests"
-               ReferencedContainer = "container:Redirection.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DFD91781DDA854B004266F8"
-            BuildableName = "Redirection.app"
-            BlueprintName = "Redirection"
+            BlueprintIdentifier = "1D8B0EC41DE9FD6700B9EAAD"
+            BuildableName = "RedirectionHelper.app"
+            BlueprintName = "RedirectionHelper"
             ReferencedContainer = "container:Redirection.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DFD91781DDA854B004266F8"
-            BuildableName = "Redirection.app"
-            BlueprintName = "Redirection"
+            BlueprintIdentifier = "1D8B0EC41DE9FD6700B9EAAD"
+            BuildableName = "RedirectionHelper.app"
+            BlueprintName = "RedirectionHelper"
             ReferencedContainer = "container:Redirection.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -98,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DFD91781DDA854B004266F8"
-            BuildableName = "Redirection.app"
-            BlueprintName = "Redirection"
+            BlueprintIdentifier = "1D8B0EC41DE9FD6700B9EAAD"
+            BuildableName = "RedirectionHelper.app"
+            BlueprintName = "RedirectionHelper"
             ReferencedContainer = "container:Redirection.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
