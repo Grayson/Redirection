@@ -11,9 +11,6 @@ import Cocoa
 class ViewController: NSViewController {
 
 	@IBOutlet var tableView: NSTableView? { didSet { setupRulesTableView(); } }
-	@IBOutlet var statusImageView: NSImageView? { didSet { reloadView() } }
-	@IBOutlet var statusLabel: NSTextField? { didSet { reloadView() } }
-	@IBOutlet var statusButton: NSButton? { didSet { reloadView() } }
 
 	var rules: [Rule] = [] { didSet { rulesTableController.update(rules: rules) } }
 	let rulesTableController = RulesTableController()
@@ -29,9 +26,6 @@ class ViewController: NSViewController {
 		rulesTableController.onRuleDeleted = { [weak self] in
 			self?.dataStore.delete(rule: $0) { self?.rules = $0 }
 		}
-	}
-
-	func reloadView() {
 	}
 
 	private func setupRulesTableView() {
