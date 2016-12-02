@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D8B0EC01DE32F0700B9EAAD /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B0EBF1DE32F0700B9EAAD /* SequenceExtensions.swift */; };
+		1DC5B0E31DF0A47E00D5309D /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD91B11DDCF974004266F8 /* Delegate.swift */; };
 		1DC5B0E51DF0AADF00D5309D /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC5B0E41DF0AADF00D5309D /* URLHandler.swift */; };
 		1DFD917D1DDA854B004266F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD917C1DDA854B004266F8 /* AppDelegate.swift */; };
 		1DFD917F1DDA854B004266F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD917E1DDA854B004266F8 /* ViewController.swift */; };
@@ -268,6 +269,7 @@
 				1DFD91A41DDAAFD7004266F8 /* RuleViewModel.swift in Sources */,
 				1DC5B0E51DF0AADF00D5309D /* URLHandler.swift in Sources */,
 				1DFD91AE1DDAC325004266F8 /* NSPopUpButtonExtensions.swift in Sources */,
+				1DC5B0E31DF0A47E00D5309D /* Delegate.swift in Sources */,
 				1DFD91B41DDDFAAC004266F8 /* Change.swift in Sources */,
 				1DFD91AA1DDABBDA004266F8 /* RuleTableCellView.swift in Sources */,
 				1DFD91B71DDDFF7A004266F8 /* DataStore.swift in Sources */,
