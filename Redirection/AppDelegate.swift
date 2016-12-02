@@ -23,8 +23,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		return PropertyListDataStore(fileUrl: propertyListUrl)
 	}()
 
+	let urlHandler = URLHandler()
+
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
-		// Insert code here to initialize your application
+		urlHandler.dataStore = dataStore
 	}
 
 	func applicationWillTerminate(_ aNotification: Notification) {
